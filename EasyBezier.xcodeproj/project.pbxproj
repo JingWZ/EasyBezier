@@ -14,13 +14,14 @@
 		20A48B33196E3C640075672D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A48B32196E3C640075672D /* main.m */; };
 		20A48B37196E3C640075672D /* EBDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A48B36196E3C640075672D /* EBDAppDelegate.m */; };
 		20A48B3A196E3C640075672D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A48B38196E3C640075672D /* Main.storyboard */; };
-		20A48B3D196E3C640075672D /* EBDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A48B3C196E3C640075672D /* EBDViewController.m */; };
 		20A48B3F196E3C640075672D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A48B3E196E3C640075672D /* Images.xcassets */; };
 		20A48B46196E3C640075672D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A48B45196E3C640075672D /* XCTest.framework */; };
 		20A48B47196E3C640075672D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A48B26196E3C640075672D /* Foundation.framework */; };
 		20A48B48196E3C640075672D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A48B2A196E3C640075672D /* UIKit.framework */; };
 		20A48B50196E3C640075672D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20A48B4E196E3C640075672D /* InfoPlist.strings */; };
 		20A48B52196E3C640075672D /* EasyBezierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A48B51196E3C640075672D /* EasyBezierTests.m */; };
+		20A48B5D196E3CAD0075672D /* EBDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A48B5C196E3CAD0075672D /* EBDMainViewController.m */; };
+		20A48B60196E3DCA0075672D /* EBDBezierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A48B5F196E3DCA0075672D /* EBDBezierView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		20A48B35196E3C640075672D /* EBDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBDAppDelegate.h; sourceTree = "<group>"; };
 		20A48B36196E3C640075672D /* EBDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBDAppDelegate.m; sourceTree = "<group>"; };
 		20A48B39196E3C640075672D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		20A48B3B196E3C640075672D /* EBDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBDViewController.h; sourceTree = "<group>"; };
-		20A48B3C196E3C640075672D /* EBDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBDViewController.m; sourceTree = "<group>"; };
 		20A48B3E196E3C640075672D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		20A48B44196E3C640075672D /* EasyBezierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBezierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A48B45196E3C640075672D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		20A48B4D196E3C640075672D /* EasyBezierTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyBezierTests-Info.plist"; sourceTree = "<group>"; };
 		20A48B4F196E3C640075672D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20A48B51196E3C640075672D /* EasyBezierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyBezierTests.m; sourceTree = "<group>"; };
+		20A48B5B196E3CAD0075672D /* EBDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBDMainViewController.h; sourceTree = "<group>"; };
+		20A48B5C196E3CAD0075672D /* EBDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBDMainViewController.m; sourceTree = "<group>"; };
+		20A48B5E196E3DCA0075672D /* EBDBezierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBDBezierView.h; sourceTree = "<group>"; };
+		20A48B5F196E3DCA0075672D /* EBDBezierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBDBezierView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +118,10 @@
 				20A48B35196E3C640075672D /* EBDAppDelegate.h */,
 				20A48B36196E3C640075672D /* EBDAppDelegate.m */,
 				20A48B38196E3C640075672D /* Main.storyboard */,
-				20A48B3B196E3C640075672D /* EBDViewController.h */,
-				20A48B3C196E3C640075672D /* EBDViewController.m */,
+				20A48B5B196E3CAD0075672D /* EBDMainViewController.h */,
+				20A48B5C196E3CAD0075672D /* EBDMainViewController.m */,
+				20A48B5E196E3DCA0075672D /* EBDBezierView.h */,
+				20A48B5F196E3DCA0075672D /* EBDBezierView.m */,
 				20A48B3E196E3C640075672D /* Images.xcassets */,
 				20A48B2D196E3C640075672D /* Supporting Files */,
 			);
@@ -250,7 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20A48B3D196E3C640075672D /* EBDViewController.m in Sources */,
+				20A48B5D196E3CAD0075672D /* EBDMainViewController.m in Sources */,
+				20A48B60196E3DCA0075672D /* EBDBezierView.m in Sources */,
 				20A48B37196E3C640075672D /* EBDAppDelegate.m in Sources */,
 				20A48B33196E3C640075672D /* main.m in Sources */,
 			);

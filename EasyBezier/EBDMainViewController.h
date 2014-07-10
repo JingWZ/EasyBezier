@@ -1,5 +1,5 @@
 //
-//  EBDViewController.h
+//  EBDMainViewController.h
 //  EasyBezier
 //
 //  Created by benlai on 14-7-10.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EBDViewController : UIViewController
+@interface EBDMainViewController : UIViewController
 
 @end
